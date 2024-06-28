@@ -6,22 +6,10 @@ This projects allow user to read a local SQlite database file and extract data a
 
 1. Open `data_pipeline.py` and update the variables `db_name`, `expected_table_list`, `sql_query` `output_pathname` and `output_filename` as required.
 2. If user needs to test the SQL query, user is able to use the Data_Pipeline.ipynb to test the sql_query.(Optional)
-3. Run the `bash_script.sh` in Terminal/Command Prompt using `bash bash_script.sh`. The bash script would run the unit-testing on the variables provided and log any errors encountered(logged at console and ).
+3. Run the `bash_script.sh` in Terminal/Command Prompt using `bash bash_script.sh`. The bash script would run the unit-testing on the variables provided and log any errors encountered(logged at console and `logging.log`).
 4. If there are no error, user could continue by pressing y/Y to create the output file in `output_pathname`
 
 # File Structure
-
-.
-├── README.md
-├── dev
-│ ├── Data_Pipeline.ipynb
-│ ├── bash_script.sh
-│ ├── cademycode.db
-│ ├── data_pipeline.py
-│ ├── functions.py
-│ ├── logging.log
-│ └── test.py
-└── prod
 
 - dev folder - contains all the codes.
   - bash_script.sh - main file to run the test.py and data_pipeline.py.
@@ -41,7 +29,7 @@ This project logs the information and error in the console and `logging.log`.
 
 ## Exception Handling
 
-The pipeline handles the following errors.
+The pipeline handles the following exceptions.
 
 - Local db file does not exist.
 - `expected_table_list` is empty.
