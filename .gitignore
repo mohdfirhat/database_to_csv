@@ -1,0 +1,7 @@
+### macOS ###
+*.DS_Store
+
+__pycache__
+.ipynb_checkpoints
+cademycode_updated.db
+cademycode.db

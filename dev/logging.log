@@ -1,0 +1,5 @@
+[2024-06-21 10:06:35,732] INFO - Establishing db connection.
+[2024-06-21 10:06:35,732] INFO - Checking expected table present in database.
+[2024-06-21 10:06:35,733] INFO - Executing SQL query on database.
+[2024-06-21 10:06:35,803] INFO - Database connection closed.
+[2024-06-21 10:06:35,862] INFO - test.csv created at ../production/test.csv
